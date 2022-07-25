@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navvbar from "./components/Navvbar";
+import ListOfUsers from "./components/ListOfUsers";
+import { users, nameOfAdmin } from "./data";
+
+
 
 function App() {
+  const handleName = (user) => {
+    alert(user.name)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: 'center' }} className="App">
+      <div>
+        <Navvbar />
+      </div>
+      <ListOfUsers users={users} nameOfAdmin={nameOfAdmin} handleName={handleName} />
     </div>
   );
 }
-
 export default App;
