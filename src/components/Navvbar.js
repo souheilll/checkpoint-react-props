@@ -9,7 +9,7 @@ function Navvbar() {
 
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
+            <Navbar fixed="top" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home"><img style={{ width: '100px' }} src={logo} alt='logo' /></Navbar.Brand>
                     <Nav style={{ marginLeft: '600px' }} className="me-auto">

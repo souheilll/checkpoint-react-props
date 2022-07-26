@@ -10,7 +10,6 @@ export const users = [
         name: "wajdi",
         email: "wajdi@gmail.com",
         image: wej
-
     },
     {
         id: 1,
@@ -23,6 +22,5 @@ export const users = [
         name: "souhail",
         email: "souhail@gmail.com",
         image: sou
-
     },
 ];
